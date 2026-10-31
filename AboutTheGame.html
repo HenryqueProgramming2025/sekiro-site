@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+    <!--Title + Icon + CSS + Fonts + Metatags-->
+
+    <title>Sekiro: Shadows Die Twice</title>
+    <link rel="icon" type="image/png" href="SekiroImages/SekiroIcon.png">
+    <link rel="stylesheet" href="Sekiro.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nosifer&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="Author" content="Carlos Henryque">
+    <meta name="Description" content="A webpage dedicated to a masterpiece of a game.">
+
+</head>
+
+<body>
+
+    <!--Header-->
+
+    <div class="SekiroHeader">
+        <h1 id="SekiroTitle">Sekiro: Shadows Die Twice</h1>
+        <h2 id="SekiroSubtitle">Restore Your Honor. Protect Your Master. Hesitation is Defeat.</h2>
+    </div>
+
+    <!--Shura Mode-->
+
+    <div class="Shura">
+
+        <h1 id="MainTitle">Shura Mode - Demon Awakening</h1>
+        <img src="SekiroImages/ShuraMode.jpg">
+        <p id="shurap">Shura is a demonic state capable of turning a warrior into a mindless, bloodthirsty killing machine. If you want to shred humanity within you, type "shura" below. Remember: actions have consequences!</p>
+
+        <input type="text" id="shurainput"><br>
+        <button onclick="ShuraAwakening()">Become a demon</button>
+
+    </div>
+
+    <!--Presenting the Game-->
+
+    <div class="SekiroPresentation">
+
+        <p>Hesitation is defeat. Take a step wrong and be punished. Play as Wolf, a skilled shinobi that must protect his master, Kuro, at all costs. Or betray those who supported you in the course of the game and let the flames of Shura consume you, becoming a real demon. The choice is yours, and so is the consequences.</p>
+        <img src="SekiroImages/SekiroGood.jpg" id="GoodEnding">
+        <img src="SekiroImages/SekiroShura.png" id="BadEnding">
+
+    </div>
+
+    <!--Weapons-->
+
+    <div class="SekiroPresentation">
+        
+        <p>When you hear the word "Shinobi", you automatically think about sword. Here, is no different. Kusabimaru is your trusty companion, given by Kuro, the divine heir, the first time you see him. You can attack, deflect, use special attacks and combine its combos with your <span>Prosthetic Tools</span>, which is a topic we will address later in this page.</p>
+        <p>Kusabimaru is not the only sword in the game. In order to make Kuro's dream of becomming mortal become true, we must advance through the game. We must defeat Genichiro, enter Senpo Temple, reach the Main Hall, defeat the Folding Screen Monkeys and, after all the efforts, receive the Blade from the Divine Child who is in the Inner Sanctum.</p>
+        <p>With a cost of three Spirit Emblems, you can use the Mortal Draw attack. It is a high-damage attack that is excellent to break postures and tear enemies's HP. By pressing L1 + R1 on PlayStation, LT + RB on Xbox or Left Button + Right Button, Wolf will perform a extended-range slash. A more powerful version of the move can be unlocked in the skill tree, and is called Enpowered Mortal Draw.</p>
+
+        <!--Sword Container-->
+
+        <div class="SwordContainer">
+
+            <div class="WeaponItem">
+                <img src="SekiroImages/Kusabimaru.webp">
+                <span class="Badge">Kusabimaru</span>
+            </div>
+
+            <div class="WeaponItem">
+                <img src="SekiroImages/MortalBlade.png">
+                <span class="Badge">Mortal Blade</span>
+            </div>
+        </div>
+        
+    </div>
+
+    <!--Tools-->
+
+    <div class="SekiroTools">
+
+        <p>There are a total of ten Prosthetic Tools Wolf can use, and each of them has its own upgraded versions. Some of them you can find across the map, others you can buy with some merchants. It is important to acknowledge that there is a chronological and more common order to find those tools, but it is easy to miss some.</p>
+        <p>The chronological order is: </p>
+        
+        <!-- Shuriken-->
+
+        <div class="ToolsItem">
+            <img src="Tools/Shuriken.jpeg">
+            <span class="ToolsBadge">1</span>
+        </div>
+        
+        <!--Firecracker-->
+
+        <div class="ToolsItem">
+            <img src="Tools/Firecracker.jpeg">
+            <span class="ToolsBadge">2</span>
+        </div>
+        
+        <!--Flamevent-->
+
+        <div class="ToolsItem">
+            <img src="Tools/Flamevent.jpeg">
+            <span class="ToolsBadge">3</span>
+        </div>
+
+        <!--Axe-->
+        
+        <div class="ToolsItem">
+            <img src="Tools/Axe.jpeg">
+            <span class="ToolsBadge">4</span>
+        </div>
+
+        <!--Mist Raven-->
+        
+        <div class="ToolsItem">
+            <img src="Tools/MistRaven.jpeg">
+            <span class="ToolsBadge">5</span>
+        </div>
+
+        <!--Spear-->
+
+        <div class="ToolsItem">
+            <img src="Tools/Spear.jpeg">
+            <span class="ToolsBadge">6</span>
+        </div>
+
+        <!--Sabimaru-->
+        
+        <div class="ToolsItem">
+            <img src="Tools/Sabimaru.jpeg">
+            <span class="ToolsBadge">7</span>
+        </div>
+
+        <!--Umbrella-->
+
+        <div class="ToolsItem">
+            <img src="Tools/Umbrella.jpeg">
+            <span class="ToolsBadge">8</span>
+        </div>
+
+        <!--Divine Abduction-->
+
+        <div class="ToolsItem">
+            <img src="Tools/Abduction.jpeg">
+            <span class="ToolsBadge">9</span>
+        </div>
+
+        <!--Whistle-->
+
+        <div class="ToolsItem">
+            <img src="Tools/Whistle.jpeg">
+            <span class="ToolsBadge">10</span>
+        </div>
+
+    </div>
+    <br><br>
+
+    <!--Presenting the Tools-->
+
+    <div class="ToolsPresentation">
+
+        <!--Shuriken-->
+
+        <h1>Loaded Shuriken</h1>
+        <p>This one is hard to miss. You can find the Loaded Shuriken in the Ashina Outskirts region, at the beginning of the game. Use your grappling hook to jump onto the roof or enter through a hole in the wall on the upper floor. Then, go back to the Dilapidated Temple and give it to the Sculptor to fit it onto your prosthetic arm.</p>
+        <p>This tool can one-shot weak enemies, like dogs, for example. In fact, before you find it, there is a group of dogs patrolling the area. It seems weak compared to other tools, but it is not the case. The shuriken is exceptionally good against agile enemies, like the Lone Shadows, an elite group of shinobi agents who serve the Interior Ministry. </p>
+        <p>Lady Butterfly, an optional boss from the Hirata Estate memory area, suffers against this tool, as it can easily interrupt many of her aerial attacks at the cost of just one Spirit Emblem. Its cost is low, but its versatility is quite unique. Never underestimate what a shinobi can do with his shurikens. </p>
+        <img src="Tools/ShurikenGameplay.jpeg">
+
+        <!--Firecracker-->
+
+        <h1>Shinobi Firecraker</h1>
+        <p>Another Prosthetic Tool that is hard to miss. This one you cannot find exploring, you have to buy from a Merchant located in the Ashina Outskirts. Proceed past the area with the first mini-boss (General Naomori Kawarada), look to the left before passing though a gate with a cannon-wielding enemy and use your grappling hook on the elevated trees or stone structures. Follow the path up and you should find a small tent where you can purchase Robert's Firecrackers.</p>
+        <p>This tool is excellent against beast-type enemies, as they get scared easily with the sound. It makes their postures break easily, forcing a long flinch animation. Even Guardian Ape, one of the most memorable and hard bosses, gets scared by the sound of it. It can also stun human enemies, giving you a safe window to attack or heal.</p>
+        <p>At the cost of just one Spiritual Emblem, you can easily stun almost anything that crosses your path. Its versatiliy allows you to use the tool both ofensively and defensively, whether you want to attack the enemy or heal yourself. The Robert's Firecrackers Item, necessary to install the Prosthetic Tools, costs 500 sens, which is a low price. Go get some money and this Prosthetic Tool is yours. In order to achieve his goals, a good Shinobi is not afraid of distracting his enemies. </p>
+        <img src="Tools/FirecrackerGameplay.avif">
+
+        <!--Flame Vent-->
+
+        <h1>Flamevent</h1>
+        <p>This one is, chronologically, the first Tool you can find within Hirata State memory. By progressing through the stage, you will find a campfire surrounded by a group of bandits and axe/katana guards. Clear out the enemies (or sprints/lure then away) and interact with the fire to loot the Flame Barrel. Then, you know what to do: go back to the Sculptor and he will build the Flame Vent using the Flame Barrel.</p>
+        <p>This Tool is extremely powerful. It drains vitality over time and prevents enemies from recovering posture, which is more important than the health bar in this game. It causes heavy flinching, panic and massive damage against Red-Eyes enemies, like the Chained Ogre and other beasts. With the Living Force skill, you can ignite your own Katana with fire. Here, fire frightens even the most terrifying enemies.</p>
+        <p>Unlike other Tools, and the ones i have mentioned before, this one costs three Spiritual Emblems. It is recommended to use it wisely, as it can drain your emblems pretty quick if you keep spamming. If timed poorly, it will leave vulnerable to enemy attacks. Being vulnerable in the world of Sekiro means you are dead, so try to use it properly, because this is a game-changing tool.</p>
+        <img src="Tools/FlameventGameplay.jpg">
+        
+        <!--Loaded Axe-->
+
+        <h1>Loaded Axe</h1>
+        <p>The Loaded Axe is, chronologically, the second Tools you can find within Hirata Estate. Its location lies close to the last one, where we found the Flame Vent. By progressing, you will find small courtyard on the right featuring a small garden shrine house guarded by two talking bandits/enemies. You can easily kill or lure them. Then, open the small shrine door and pick up the Shinobi Axe of the Monkey. Then, take the item to the Sculptor.</p>
+        <p>This tool is ridiculous. Its heavy-damage it is so brutal it can one-shot shield and hat enemies. This top-tier performance weapon deals both massive posture and vitality damage. Once it hits, the enemies will very likely feel the impact of your game-changer toy. Combining it with the Fang abd Blade skill lets you chain an axe smash directly into a dual-sword lunge.</p>
+        <p>I talked about the pros of this Tools, but it does have its cons. The slow animation easily leaves the player vulnerable, which is the last thing you want in a game like Sekiro. Agile enemies can sidestep, dodge if you do not time the attack correctly. Each attack consumes 2 Spirit Emblems, which is less than the Flame Vent, but spamming it quickly drains your limited pool. A good shinobi should not be afraid of striking hard.</p>
+        <img src="Tools/AxeGameplay.jpeg">
+
+        <!--Mist Raven-->
+
+        <h1>Mist Raven</h1>
+        <p>Mist Raven is the third and final Prosthetic Tool you can find within Hirata Estate. It is the easiest to miss, so be careful. Head to the Bamboo Thicket Slope idol, grappke left and swim upstream to a tree branch, follow he shore and slash through bamboo into a cave, wall-jump up to the cliff, then fight or run past the purple Lone Shadow ninja to the pagoda and grab the Mist Raven's Feathers — return them to the Sculptor at the Dilapidated Temple to craft the Mist Raven.</p>
+        <p>This Tool is underrated. It is versatile, stylish and a safe way to vanish through almost any physical attack, granting complete invulnerability. It can even reverse lightning, which is insane. If timed correctly, you will redirect the eletricity back to Genichiro/Isshin. It is to the player to choose a direction to teleport, which shows the Tool's versatility. It is the most "ninja" Tool out of the ten.</p>
+        <p>Although is very cool to use, some player view it as flashy rather than optimal. If you have mastered deflects and mikiri-counter, you are unstoppable. At the cost of two Spirit Emblems, the player must pay attention in order to not drain it all. It also requires precise timing and intentional directional input (or zero to go straight up). Use it wisely and you will fell like an anime character.</p>
+        <img src="Tools/MistRavenGameplay.jpg">
+
+        <!--Loaded Spear-->
+
+        <h1>Loaded Spear</h1>
+        <p>Back to the present, progress through the Ashina Outskirts and defeat Gyoubu Masataka Oniwa. Proceed to Ashina Castle and cross the main bridge to the left. Kill the two soldier there to obtain the Gatehouse Key, a necessary item in order to have the spear. By going to the Ashina Reservoir, the area where you started the game, you will see a locked gatehouse (the building you crawled under at the very start of the game) and use the key to open it. There, you will collect the Gyoubu's Broken Horn. Return to the Dilapidated Temple and speak to the Sculptor to craft the Loaded Spear.</p>
+        <p>As a long range weapon, this tool is excellent for hitting enemies that are trying to back away. It can also drag smaller enemies straight to you, letting you close the gap fast. When fighting the second phase of Guardian Ape, he will try a big overhead slam attack and, if you deflect it, he will fall. Use the pull-back twice on his neck in order to rips out the centipede, dealing absurd posture damage.</p>
+        <p>Costing only one Spirit Emblem per use, the Loaded Spear is quite strong and versatile. Be aware that this Tool is slow, making it hard to land attacks against fast enemies, like the Lone Shadows and the two Centipedes, for example. A wrong timing will leave the player vulnerable and, in the world of Sekiro, vulnerability equals death. When the Loaded Spear extends, the death draws near.</p>
+        <img src="Tools/SpearGameplay.avif">
+
+        <!--Sabimaru-->
+
+        <h1>Sabimaru</h1>
+        <p>This beauty is located inside Ashina Castle. It is hidden inside a chest on the bottom floor of the castle's main keep. Be aware that enemies are waiting and, if you are in the middle of the game, prepare yourself to fight a Chained Ogre. Use your grappling hook and try to fall safely, otherwise you will take fall damage. Oncle you clear the enemies (or the Ogre), head into the small adjoining room directly off the main bottom floor area. You will find a large treasure chest sitting next to an decorative set of armos. Open the chest to obtain the Sabimaru. Take the item back to the Sculptor to fit it to your prosthetic arm.</p>
+        <p>Sabimaru's gameplay pros are that its rapid multi-hit combo builds poison status quickly to deal percentage-based damage over time against high-health enemies, it shreds poison-weak foes like Okami Warriors, O'Rin, and Snake Eyes. This is a situational and fun shinobi Prosthetic Tool, rather than a universally broken weapon. With its 6-hit (or more, when upgrades) combo, Wolf will attack aggressively and pressure human-sized enemies.</p>
+        <p>If timing is poor, you can be locked into a combo chain, meaning you can easily get hit. If the enemy resists poision, there is basically no point using this Tool, and its high Spiritual Emblem cost makes it a wasteful choice agaisnt foes that are not poison weak. </p>
+        <img src="Tools/SabimaruGameplay.jpeg">
+
+        <!--Umbrella-->
+
+        <h1>Loaded Umbrella</h1>
+        <p>The load the Umbrella is, without a doubt, top 3 three Prosthetic Tools in the game. In order to achieve this beauty, travel to the Old Grace Sculptor's idol in Ashina Castle. From the idol, go toward the edge and look down over the cliff. Drop down onto the roof of the building below that has a hole in the roof. Enter the building through the hole to talk to Blackhat Badger. Buy the Iron Fortress from him. If the merchant is no longer there, you can check the item lying where he stood or check the Offering Box at the Dilapidated Temple.</p>
+        <p>This masterpiece allows Wolf to block attacks from all directions and move while guarding. The deflect window is much more forgiving that using your katana. With the Projected Force skill, you can unleash a power a powerful Cross Slash directly out of your guard. A must-have tool for Apparition bosses, fire enemies, and anyone who struggles with perfectly timed sword deflects.</p>
+        <p>However, its true potential lies in the upgrades. The Phoenix's Lilac Umbrella negates Terror, shreding minibosses like Schichimen Warriors and Headless. The Suzaku's Lotus Umbrella absorbs fire, making it perfect against some enemies and even bosses, like the Demon of Hatred. A quick reminder that the tool cannot block sweeping attack, so it is a hundred percent recommendable to jumpo over those. When the Umbrella is raised, the hunter becomes the hunted.</p>
+        <img src="Tools/UmbrellaGameplay.jpeg">
+
+        <!--Divine Abduction-->
+
+        <h1>Divine Abduction</h1>
+        <p>The Divine Abduction is found in the Sunken Valley, inside the Gun Fort. To get it, you must defeat the Long-Arm Centipede Giraffe mini-boss. After the fight, loot the Large Fan from the Buddha statue in the room and give it to the Sculptor.</p>
+        <p>Unlike most of the tools, this one is not about direct damage. It spins enemies around, turning their backs to you for a free deathblow or a quick escape. It is also the only way to access the secred "Return" ending, as it can send the Divine Child of Rejuvenation to the Inner Sanctum.</p>
+        <p>WUth the Golden Vortex uphgrade, it can even blind enemies or deflect projectiles. However, it costs 2 Spirit Emblems per use and is completely useless against bosses. As a niche tool, it serves its purpose. When the wind blows, the unprepared fall.</p>
+        <img src="Tools/DivineAbductionGameplay.jpg">
+
+        <!--Finger Whistle-->
+
+        <h1>Finger Whistle</h1>
+        <p>The Finger Whistle is dropped by the Guardian Ape boss at the end of the Sunken Valley, past the Bodhisattva Valley Sculptor's Idol. After defeating the beast, take the Slender Finger item to the Sculptor to craft this tool.</p>
+        <p>As a tool entirely focused on distraction, it can draw a single enemy to your location for a stealth deathblow, or enrage beasts, making them attack their allies. It is perfect for stealth and crowd control.</p>
+        <p>However, its true purpose is tied to a specific boss. The upgrade version, called Malcontent, can be used to stun the Demon of Hatred, giving Wolf massive window to attack. Be aware that it costs three Spirit Emblems per use and has almost no affect on other bosses, besides Demon of Hatred. The whistle calls, and the beast listens.</p>
+        <img src="Tools/WhistleGameplay.jpg">
+
+    </div>
+
+    <!--Sugars-->
+
+    <!--Sekiro Button-->
+
+    <a href="#" class="SekiroButton">
+        <img src="SekiroImages/SekiroButton.jpg"> 
+    </a>
+
+    <!--Audio-->
+
+    <div class="ControllingAudio">
+        
+        <img src="SekiroImages/Emma.jpg" id="musicIcon">
+        <p id="p1">Ookami-Dono, beating the game is not easy,</p>
+        <p id="p2">That is why i want you to relax,</p>
+        <p id="p3">Listen to some music to prepare yourself for the battle!</p>
+
+        <audio controls loop id="SekiroSong">
+            <source src="Songs/ThemeSong.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <!--JS connecting-->
+
+    <script src="jskiro.js"></script>
+
+</body>
+
+</html>
