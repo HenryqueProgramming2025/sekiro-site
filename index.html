@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="Sekiro.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nosifer&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nosifer&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Nosifer&display=swap" rel="stylesheet">
 
     <meta charset="UTF-8">
     <meta name="Author" content="Carlos Henryque">
@@ -23,21 +24,37 @@
     <!--Header-->
 
     <div class="SekiroHeader">
-        <h1>Sekiro: Shadows Die Twice</h1>
-        <h2>Restore Your Honor. Protect Your Master. Hesitation is Defeat.</h2>
+        <h1 id="SekiroTitle">Sekiro: Shadows Die Twice</h1>
+        <h2 id="SekiroSubtitle">Restore Your Honor. Protect Your Master. Hesitation is Defeat.</h2>
+    </div>
+
+    <!--Shura Mode-->
+
+    <div class="Shura">
+
+        <h1 id="MainTitle">Shura Mode - Demon Awakening</h1>
+        <img src="SekiroImages/ShuraMode.jpg">
+        <p id="shurap">Shura is a demonic state capable of turning a warrior into a mindless, bloodthirsty killing machine. If you want to shred humanity within you, type "shura" below. Remember: actions have consequences!</p>
+
+        <input type="text" id="shurainput"><br>
+        <button onclick="ShuraAwakening()">Become a demon</button>
+
     </div>
 
     <!--Presenting the Game-->
 
     <div class="SekiroPresentation">
+
         <p>Hesitation is defeat. Take a step wrong and be punished. Play as Wolf, a skilled shinobi that must protect his master, Kuro, at all costs. Or betray those who supported you in the course of the game and let the flames of Shura consume you, becoming a real demon. The choice is yours, and so is the consequences.</p>
-        <img src="SekiroImages/SekiroGood.jpg">
-        <img src="SekiroImages/SekiroShura.png">
+        <img src="SekiroImages/SekiroGood.jpg" id="GoodEnding">
+        <img src="SekiroImages/SekiroShura.png" id="BadEnding">
+
     </div>
 
     <!--Weapons-->
 
     <div class="SekiroPresentation">
+        
         <p>When you hear the word "Shinobi", you automatically think about sword. Here, is no different. Kusabimaru is your trusty companion, given by Kuro, the divine heir, the first time you see him. You can attack, deflect, use special attacks and combine its combos with your <span>Prosthetic Tools</span>, which is a topic we will address later in this page.</p>
         <p>Kusabimaru is not the only sword in the game. In order to make Kuro's dream of becomming mortal become true, we must advance through the game. We must defeat Genichiro, enter Senpo Temple, reach the Main Hall, defeat the Folding Screen Monkeys and, after all the efforts, receive the Blade from the Divine Child who is in the Inner Sanctum.</p>
         <p>With a cost of three Spirit Emblems, you can use the Mortal Draw attack. It is a high-damage attack that is excellent to break postures and tear enemies's HP. By pressing L1 + R1 on PlayStation, LT + RB on Xbox or Left Button + Right Button, Wolf will perform a extended-range slash. A more powerful version of the move can be unlocked in the skill tree, and is called Enpowered Mortal Draw.</p>
@@ -202,12 +219,30 @@
         <!--Umbrella-->
 
         <h1>Loaded Umbrella</h1>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>The load the Umbrella is, without a doubt, top 3 three Prosthetic Tools in the game. In order to achieve this beauty, travel to the Old Grace Sculptor's idol in Ashina Castle. From the idol, go toward the edge and look down over the cliff. Drop down onto the roof of the building below that has a hole in the roof. Enter the building through the hole to talk to Blackhat Badger. Buy the Iron Fortress from him. If the merchant is no longer there, you can check the item lying where he stood or check the Offering Box at the Dilapidated Temple.</p>
+        <p>This masterpiece allows Wolf to block attacks from all directions and move while guarding. The deflect window is much more forgiving that using your katana. With the Projected Force skill, you can unleash a power a powerful Cross Slash directly out of your guard. A must-have tool for Apparition bosses, fire enemies, and anyone who struggles with perfectly timed sword deflects.</p>
+        <p>However, its true potential lies in the upgrades. The Phoenix's Lilac Umbrella negates Terror, shreding minibosses like Schichimen Warriors and Headless. The Suzaku's Lotus Umbrella absorbs fire, making it perfect against some enemies and even bosses, like the Demon of Hatred. A quick reminder that the tool cannot block sweeping attack, so it is a hundred percent recommendable to jumpo over those. When the Umbrella is raised, the hunter becomes the hunted.</p>
         <img src="Tools/UmbrellaGameplay.jpeg">
 
+        <!--Divine Abduction-->
+
+        <h1>Divine Abduction</h1>
+        <p>The Divine Abduction is found in the Sunken Valley, inside the Gun Fort. To get it, you must defeat the Long-Arm Centipede Giraffe mini-boss. After the fight, loot the Large Fan from the Buddha statue in the room and give it to the Sculptor.</p>
+        <p>Unlike most of the tools, this one is not about direct damage. It spins enemies around, turning their backs to you for a free deathblow or a quick escape. It is also the only way to access the secred "Return" ending, as it can send the Divine Child of Rejuvenation to the Inner Sanctum.</p>
+        <p>WUth the Golden Vortex uphgrade, it can even blind enemies or deflect projectiles. However, it costs 2 Spirit Emblems per use and is completely useless against bosses. As a niche tool, it serves its purpose. When the wind blows, the unprepared fall.</p>
+        <img src="Tools/DivineAbductionGameplay.jpg">
+
+        <!--Finger Whistle-->
+
+        <h1>Finger Whistle</h1>
+        <p>The Finger Whistle is dropped by the Guardian Ape boss at the end of the Sunken Valley, past the Bodhisattva Valley Sculptor's Idol. After defeating the beast, take the Slender Finger item to the Sculptor to craft this tool.</p>
+        <p>As a tool entirely focused on distraction, it can draw a single enemy to your location for a stealth deathblow, or enrage beasts, making them attack their allies. It is perfect for stealth and crowd control.</p>
+        <p>However, its true purpose is tied to a specific boss. The upgrade version, called Malcontent, can be used to stun the Demon of Hatred, giving Wolf massive window to attack. Be aware that it costs three Spirit Emblems per use and has almost no affect on other bosses, besides Demon of Hatred. The whistle calls, and the beast listens.</p>
+        <img src="Tools/WhistleGameplay.jpg">
+
     </div>
+
+    <!--Sugars-->
 
     <!--Sekiro Button-->
 
@@ -219,15 +254,20 @@
 
     <div class="ControllingAudio">
         
-        <img src="SekiroImages/Emma.jpg">
-        <p>Ookami-Dono, beating the game is not easy,</p>
-        <p>That is why i want you to relax,</p>
-        <p>Listen to some music to prepare yourself for the battle!</p>
+        <img src="SekiroImages/Emma.jpg" id="musicIcon">
+        <p id="p1">Ookami-Dono, beating the game is not easy,</p>
+        <p id="p2">That is why i want you to relax,</p>
+        <p id="p3">Listen to some music to prepare yourself for the battle!</p>
 
-        <audio controls loop>
+        <audio controls loop id="SekiroSong">
             <source src="Songs/ThemeSong.mp3" type="audio/mpeg">
         </audio>
+
     </div>
+
+    <!--JS connecting-->
+
+    <script src="jskiro.js"></script>
 
 </body>
 
